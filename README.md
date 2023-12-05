@@ -10,6 +10,12 @@ WebSpeakerJsComponent is a pure JavaScript (Vanilla JS) web component that enabl
 - Customization of narration language and voice.
 - Customizable control styles with Bootstrap.
 
+## Demo
+
+A live demo of the WebSpeakerJsComponent is available at the following link:
+[WebSpeakerJs Demo](https://scarselli.eu.pythonanywhere.com/)
+
+
 ## Installation
 
 Include `WebSpeakerJsComponent` in your project by copying the class code into your JavaScript file or creating a separate file, e.g., `WebSpeakerJsComponent.js`.
@@ -39,14 +45,11 @@ To use the WebSpeakerJsComponent, insert the `web-speaker-js` tag in your HTML a
 <web-speaker-js target-id="my-text"></web-speaker-js>
 ```
 
-## Custom Styles
+## License
 
-You can customize the style of the control buttons using CSS. The component uses Bootstrap for default styles, but you can override them as you prefer.
+WebSpeakerJsComponent is licensed under the MIT License. For more details, please see the [LICENSE](https://github.com/scarsellifi/WebSpeakerJS/blob/main/LICENSE) file in the GitHub repository.
+
 
 ## Contributing
 
 Contributions to the library are welcome! Feel free to fork the repository, open issues, and submit pull requests.
-
-## License
-
-WebSpeakerJsComponent is released under the [MIT License](LINK_TO_LICENSE).
