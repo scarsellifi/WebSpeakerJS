@@ -63,8 +63,8 @@ class WebSpeakerJsComponent extends HTMLElement {
             }
         </style>
 
-        <button id="toggle" class="btn btn-primary">🕪</button>
-        <button id="reset" class="btn btn-secondary">🔁🕪</button>
+        <button id="toggle" class="btn btn-primary" aria-label="Play">🕪</button>
+        <button id="reset" class="btn btn-secondary" aria-label="Reset">🔁🕪</button>
     `;
   }
 
