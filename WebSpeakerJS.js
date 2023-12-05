@@ -18,6 +18,23 @@ class WebSpeakerJsComponent extends HTMLElement {
     this.shadowRoot
       .getElementById("reset")
       .addEventListener("click", () => this.resetSpeech());
+    this.shadowRoot
+      .getElementById("toggle")
+      .addEventListener("keydown", (e) => this.handleKeyPress(e, "toggle"));
+    this.shadowRoot
+      .getElementById("reset")
+      .addEventListener("keydown", (e) => this.handleKeyPress(e, "reset"));
+  }
+
+  handleKeyPress(e, buttonType) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      if (buttonType === "toggle") {
+        this.togglePlay();
+      } else if (buttonType === "reset") {
+        this.resetSpeech();
+      }
+    }
   }
 
   render() {
@@ -63,8 +80,8 @@ class WebSpeakerJsComponent extends HTMLElement {
             }
         </style>
 
-        <button id="toggle" class="btn btn-primary" aria-label="Play">🕪</button>
-        <button id="reset" class="btn btn-secondary" aria-label="Reset">🔁🕪</button>
+        <button id="toggle" class="btn btn-primary" aria-label="Play" tabindex="0">🕪</button>
+        <button id="reset" class="btn btn-secondary" aria-label="Reset" tabindex="0">🔁🕪</button>
     `;
   }
 
